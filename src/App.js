@@ -1,25 +1,77 @@
-import logo from './logo.svg';
+import SearchBar from './SearchBar';
 import './App.css';
+// import CategorySort from './CategorySort';
+// import PriceSort from './PriceSort';
+import ProductList from './ProductList';
+import FilterDropdown from './FilterDropdown';
+// import Product from './Product';
+import AlexaImage from './images/alexa.png';
 
-function App() {
+const App = () => {
+  const productArray = [{
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  },
+  {
+    price:200,
+    category: 'food',
+    name: 'apple',
+    image: AlexaImage,
+  }
+];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SearchBar/>
+      <FilterDropdown title={'title'} options={[]}/>
+      <ProductList productArray={productArray}/>      
+      
+      
     </div>
   );
-}
+};
 
 export default App;
